@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FschomeApplication {
+public class FscHomeApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FschomeApplication.class, args);
+		SpringApplication.run(FscHomeApplication.class, args);
 	}
 
 }
