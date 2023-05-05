@@ -6,12 +6,18 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class FscHomeController {
 
-    @GetMapping("/home")
-    public String home(){
-        return "homepage/home";
+    @GetMapping("/about")
+    public String about(){
+        return "composition/about";
     }
-    @GetMapping("/")
+
+//    @GetMapping("/")
+    @GetMapping({"/", ""})
+    public String home() {
+        return "composition/home";
+    }
+    @GetMapping("/static")
     public String hosp(){
-        return "hosp/index";
+        return "hospital_code/index";
     }
 }
