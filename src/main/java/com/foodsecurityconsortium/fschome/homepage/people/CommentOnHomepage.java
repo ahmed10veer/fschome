@@ -11,8 +11,8 @@ public class CommentOnHomepage {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
-    @ManyToOne
-    private People people;
+//    @ManyToOne
+//    private People people;
 
     private String comment;
 

@@ -1,4 +1,4 @@
-<div xmlns="http://www.w3.org/1999/xhtml">
+<div xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
     <div class="container-fluid">
         <div class="container">
             <div class="row gx-5">
@@ -35,7 +35,7 @@
                 <div class="col-lg-6">
                     <div class="bg-white text-center rounded p-5">
                         <h1 class="mb-4">Enlist Our Blog </h1>
-                        <form>
+                        <form method="post" action="/people/saveredirect">
                             <div class="row g-3">
                                 <!--                                <div class="col-12 col-sm-6">-->
                                 <!--                                    <select class="form-select bg-light border-0" style="height: 55px;">-->
@@ -54,25 +54,25 @@
                                 <!--                                    </select>-->
                                 <!--                                </div>-->
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="First Name" style="height: 55px;">
+                                    <input name="firstName" type="text" class="form-control bg-light border-0" placeholder="First Name" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Last Name" style="height: 55px;">
+                                    <input name="lastName" type="text" class="form-control bg-light border-0" placeholder="Last Name" style="height: 55px;">
                                 </div>
                                 <div class="col-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Education" style="height: 55px;">
+                                    <input name="education" type="text" class="form-control bg-light border-0" placeholder="Education" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Occupation" style="height: 55px;">
+                                    <input name="occupation" type="text" class="form-control bg-light border-0" placeholder="Occupation" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Institution" style="height: 55px;">
+                                    <input name="institution" type="text" class="form-control bg-light border-0" placeholder="Institution" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
+                                    <input name="email" type="email" class="form-control bg-light border-0" placeholder="Your Email (mandatory)" style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="tel" class="form-control bg-light border-0" placeholder="Your Phone Number" style="height: 55px;">
+                                    <input name="phone" type="tel" class="form-control bg-light border-0" placeholder="Your Phone Number" style="height: 55px;">
                                 </div>
 
                                 <!--                                <div class="col-12 col-sm-6">-->
@@ -90,7 +90,7 @@
                                 <!--                                    </div>-->
                                 <!--                                </div>-->
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Participate</button>
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Get Involved</button>
                                 </div>
                             </div>
                         </form>
