@@ -2,6 +2,7 @@ package com.foodsecurityconsortium.fschome.homepage;
 
 import com.foodsecurityconsortium.fschome.homepage.people.People;
 import com.foodsecurityconsortium.fschome.homepage.people.PeopleService;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -26,7 +27,8 @@ public class FscHomeController {
     }
 
     @GetMapping({"/", ""})
-    public String home() {
+    public String home(HttpServletRequest request) {
+        System.out.println("\n=============== getRemoteAddr(): " + request.getRemoteAddr() +"\n");
         return "composition/home";
     }
 
@@ -50,12 +52,12 @@ public class FscHomeController {
         return "composition/blog";
     }
 
-        @GetMapping("/research")
+    @GetMapping("/research")
     public String research() {
         return "composition/research";
     }
 
-        @GetMapping("/howtohelp")
+    @GetMapping("/howtohelp")
     public String howToHelp() {
         return "composition/how_to_help";
     }
