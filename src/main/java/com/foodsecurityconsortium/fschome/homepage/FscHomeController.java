@@ -15,7 +15,7 @@ public class FscHomeController {
 
     @RequestMapping(value = "/people/saveredirect", method = RequestMethod.POST)
     public String saveRedirect(@ModelAttribute People people) {
-        System.out.println("\n====================\n\n" + people.getEmail() + "\n");
+        System.out.println("Email: " + people.getEmail() + "\n");
 
         if (people.getEmail() == null || people.getEmail().isEmpty()) {
             return "redirect:/";
