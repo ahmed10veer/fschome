@@ -21,10 +21,9 @@ public class RequestInterceptor implements HandlerInterceptor {
     ) throws Exception {
 
 //        LOGGER.info("Request from IP address: {}", request.getRemoteAddr());
-        System.out.println(
-                "\n\n========= Request from IP address: " + request.getRemoteAddr() + " ========="
-        );
-
+        String ipAddress = request.getHeader("X-Forward-For");
+        if (ipAddress == null) ipAddress = request.getRemoteAddr();
+        System.out.println("\n\n========= Request from IP address: " + ipAddress + " =========");
         return true;
     }
 

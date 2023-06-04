@@ -1,4 +1,4 @@
-package com.foodsecurityconsortium.fschome.homepage.base.configurations;
+package com.foodsecurityconsortium.fschome.homepage.base;
 
 import com.foodsecurityconsortium.fschome.homepage.base.RequestInterceptor;
 import org.springframework.context.annotation.Configuration;
@@ -10,6 +10,6 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-//        registry.addInterceptor(new RequestInterceptor());
+        registry.addInterceptor(new RequestInterceptor());
     }
 }
