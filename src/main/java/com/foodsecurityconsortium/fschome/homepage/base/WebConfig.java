@@ -1,6 +1,5 @@
 package com.foodsecurityconsortium.fschome.homepage.base;
 
-import com.foodsecurityconsortium.fschome.homepage.base.RequestInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
